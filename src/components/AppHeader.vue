@@ -9,23 +9,6 @@
         </div>
       </a>
 
-      <div class="accessibility-errors-intentional">
-        <!-- missing alt attribute -->
-        <img src="testing">
-
-        <!-- missing title attribute -->
-        <iframe src="testing">testing</iframe>
-
-        <!-- missing label -->
-        <input type="text">
-
-        <!-- missing alt attribute -->
-        <area shape="rect" coords="115,158,276,192" href="http://en.wikipedia.org/wiki/Mercury_%28planet%29">
-
-        <!-- missing title attribute -->
-        <svg role="img"><circle cx="30" cy="30" r="10" fill="brown"></circle><svg>
-      </div>
-
       <nav aria-label="Primary" role="navigation">
         <button class="menu-button-wrapper" @click="menuOpen = !menuOpen"
         aria-label="toggle navigation menu">
