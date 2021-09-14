@@ -1,6 +1,9 @@
 <template>
 
   <!-- gotta be a way to simplify the logic for breadcrumbs! -->
+  <div>
+    <img src="1234455664578">
+  </div>
   <nav
   class="r-grid bread-crumb"
   aria-label="Breadcrumb"
