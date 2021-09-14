@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>UIC GoTime</title>
+    <script src="/js/skipto.min.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but UIC GoTime doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+    // If Internet Explorer, compatibility
+    window.onload = function() {
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf("MSIE ");
+      if ((msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))
+      || /Edge\/\d./i.test(navigator.userAgent))
+      {
+        document.body.innerHTML +='<div id="browser-support-bg"></div><div id="browser-support">The browser you are using is not supported on this website. Please update to the latest version of Microsoft Edge, Firefox, Chrome or Safari.</div>';
+      }
+    }
+  </script>
+</html>
