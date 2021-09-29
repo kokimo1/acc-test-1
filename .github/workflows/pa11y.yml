@@ -19,7 +19,7 @@ jobs:
         
       - name: Read pa11y_output file.
         id: pa11y_output
-        uses: kokimo1/acc-test-1
+        uses: juliangruber/read-file-action@v1.1.4
         with:
           path: ./pa11y_output.txt
         
