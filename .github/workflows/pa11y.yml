@@ -20,6 +20,9 @@ jobs:
       - name: Install pa11y-ci dependencies.
         run: npm install
 
+      - name: Install jekyll.
+        run: gem install jekyll bundler
+
       - name: Start up jekyll server.
         run: jekyll serve --detach
 
