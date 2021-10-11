@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Start up jekyll server.
-        run: npm run start-detached
+        run: jekyll serve --detach
 
       - name: Run pa11y-ci.
         run: npm run pa11y-ci:sitemap 2>&1 | tee pa11y_output.txt
